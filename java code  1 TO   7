@@ -1,0 +1,163 @@
+Java Program to Convert Celsius into Fahrenheit
+// Java Program to Convert Celsius into Fahrenheit
+
+class celsiustofahrenheit {
+    public static void main(String[] args)
+    {
+        // initializing
+
+        double celsius = 10.0, fahrenheit = 0.0;
+        
+        // formula for conversion
+
+        fahrenheit = (celsius * 1.8) + 32;
+        System.out.println(" value of temperature in fahrenheit:"+ fahrenheit);
+    }
+}
+
+Compile java program 
+
+C:\> javac celsiustofahrenheit.java
+
+Running Java Program
+C:\> java celsiustofahrenheit
+2.Java Program to Find largest of Two Numbers
+import java.util.Scanner;
+public class LargestofTwo {
+	private static Scanner sc;
+	public static void main(String[] args) 
+	{
+		int number1, number2;
+		sc = new Scanner(System.in);
+		
+		System.out.print(" Please Enter the First Number : ");
+		number1 = sc.nextInt();	
+		
+		System.out.print(" Please Enter the Second Number : ");
+		number2 = sc.nextInt();	
+		
+		if(number1 > number2) 
+	    {
+			System.out.println("\n The Largest Number = " + number1);          
+	    } 
+	    else if (number2 > number1)
+	    { 
+	    	System.out.println("\n The Largest Number = " + number2);        
+	    } 
+	    else 
+	    {
+	    	System.out.println("\n Both are Equal");
+	    }		
+	}	
+}
+
+Compile java program 
+C:\> javac LargestofTwo.java
+
+Running Java Program
+C:\> java LargestofTwo
+3.Java Program to factorial of a number
+import java.io.*;
+import java.util.Scanner;
+public class factorial
+{
+  public static void main(String args[])
+   {
+    int s=1;
+    Scanner S=new Scanner(System.in);
+    System.out.println("Enter the number");
+    int n=S.nextInt();
+    if(n>0)
+      {
+    for(int i=1;i<=n;i++)
+      {
+       s=i*s;
+      }
+      System.out.println("The factorial of "+n+"="+s);  
+     } 
+     else
+      {
+       System.out.println("0");
+       }
+   }
+} 
+Compile java program 
+C:\> javac factorial.java
+
+Running Java Program
+C:\> java factorial
+4. Java Program for Vector Class and methods
+
+import java.util.*;
+class Demovector
+{
+	public static void main(String args[])
+	{
+		Vector Vec=new Vector(5,2);//created vector 
+		System.out.println("capacity:"+Vec.size());
+		System.out.println("capacity:"+Vec.capacity());
+		for(int i=1;i<6;i++)
+		Vec.addElement(new Integer(i));
+		System.out.println("size:"+Vec.size());
+		System.out.println("capacity:"+Vec.capacity());
+		Vec.addElement(new Double(173.58));
+		System.out.println("capacity:"+Vec.capacity());
+		System.out.println("size:"+Vec.size());
+}
+}
+
+Compile java program 
+C:\> javac Demovector.java
+
+Running Java Program
+C:\> java Demovector
+
+5. Java program to check palindrome string
+
+import java.util.Scanner;
+ 
+class Palindrome
+{
+   public static void main(String args[])
+   {
+      String str,rev = "";
+      Scanner sc = new Scanner(System.in);
+ 
+      System.out.println("Enter a string:");
+      str = sc.nextLine();
+ 
+      int length = str.length();
+ 
+      for ( int i = length-1; i >= 0; i-- )
+         rev = rev + str.charAt(i);
+ 
+      if (str.equals(rev))
+         System.out.println(str+" is a palindrome");
+      else
+         System.out.println(str+" is not a palindrome");
+ 
+   }
+
+Compile java program 
+C:\> javac Palindrome.java
+
+Running Java Program
+C:\> java Palindrome
+7. Find area of circle using command line arguments
+class Circle
+{
+public static void main(String args[])
+{
+double Area,Perimeter,radius=0;
+radius = Double.parseDouble(args[0]);
+Area=22*radius*radius/7;
+Perimeter=2*22*radius/7;
+System.out.println("Area of circle is"+Area);
+System.out.println("Perimeter of circle is"+Perimeter);
+}
+}
+Compile java program 
+C:\> javac Palindrome.java
+
+Running Java Program
+C:\> java Palindrome
